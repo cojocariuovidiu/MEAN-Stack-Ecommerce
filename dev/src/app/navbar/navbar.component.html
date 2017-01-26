@@ -1,0 +1,61 @@
+<nav [ngClass]="{'nav':true, 'navbar-fixed':true, 'has-shadow':navbarShadow}">
+    <div class="container">
+
+        <div class="nav-left">
+            <a class="nav-item is-brand" routerLink="/">
+                <img src="logo.png">
+            </a>            
+        </div>
+
+        <div class="nav-center">
+            <a class="nav-item" target="_blank" href="https://github.com/diw112/MEAN-Stack-Ecommerce">
+                <span class="icon">
+                        <i class="fa fa-github"></i>
+                </span>
+            </a>
+            <a class="nav-item" target="_blank" href="https://www.facebook.com/AITTHIBN">
+                <span class="icon">
+                        <i class="fa fa-facebook-square"></i>
+                </span>
+            </a>
+        </div>
+
+        <span [ngClass]="{'nav-toggle':true, 'is-active':nav_menu}" (click)="nav_menus();">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+
+        <div [ngClass]="{'nav-right':true,'nav-menu':true, 'is-active':nav_menu}" >
+            <a class="nav-item " >
+                แจ้งโอน
+            </a>
+            
+            <a class="nav-item">
+                วิธีชำระเงิน
+            </a>
+            <a class="nav-item">
+                เกี่ยวกับ
+            </a>
+            <!--
+            <a class="nav-item">
+                <a class="button is-primary" style="border-radius: 10px;">
+                    <span class="icon">
+                    <i class="fa fa-shopping-cart"></i>
+                    </span>
+                    <span><b>20</b></span>
+                </a>
+            </a>
+            -->
+
+            <span class="nav-item">
+                <app-sign-in></app-sign-in>  
+            </span>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<nav class="nav"></nav>

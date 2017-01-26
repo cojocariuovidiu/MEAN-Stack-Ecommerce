@@ -1,0 +1,105 @@
+<div style="background:white; padding-top: 4%;">
+
+  <div class="container">
+    <div class="columns">
+
+      <div class="column is-1" style="text-align: center;">       
+
+            <img
+              *ngFor="let item of items"  
+              [ngClass]="{'product-desktop':productDesktop, 'product-mobile':productMobile}" 
+              src="placeholders/1280x960.png" 
+              alt=""
+            >
+       
+      </div>
+
+      <div class="column is-7" style="margin: auto;">
+        <img src="placeholders/1280x960.png" alt="">
+      </div>
+
+      <div class="column is-4">
+
+        <div>
+          <b>
+            <a routerLink="/">Home</a>
+            <span class="icon"><i class="fa fa-angle-right"></i></span>
+            <a>Category</a>
+            <span class="icon"><i class="fa fa-angle-right"></i></span>
+            <a>Product Name</a>
+          </b>
+        </div>
+        <br>
+        <div>
+          <h4 class="title is-4"><b>Product Name</b></h4>
+        </div>
+        <br>
+        <div>
+          <h5 class="title is-5"><b>฿1,200 บาท</b></h5>
+        </div>
+          <br>
+        <div>
+          <p>
+            Pellentesque habitant morbi tristique senectus et netus et 
+            malesuada fames ac turpis egestas. Vestibulum tortor quam, 
+            feugiat vitae, ultricies eget, tempor sit amet, 
+            ante. Donec eu libero sit amet quam egestas semper. 
+            Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+          </p>
+        </div>
+        <br>
+        <div>
+          <a class="button is-small">
+            <span class="icon">
+              <i class="fa fa-plus" style="color: #969696;"></i>
+            </span>    
+          </a>
+          <b style="color: #969696;">&nbsp;1&nbsp;</b>
+          <a class="button is-small">
+            <span class="icon">
+              <i class="fa fa-minus" style="color: #969696;"></i>
+            </span>    
+          </a>            
+        </div>  
+        <br>
+        <div>
+          <h5 class="title is-5"><b>SIZES</b></h5>
+          <a class="button is-primary">S</a>
+          <a class="button">M</a>
+          <a class="button">L</a>
+          <a class="button">XL</a>
+          <a class="button">XXL</a>
+        </div>     
+        <br>
+        <div>
+          <h5 class="title is-5"><b>COLORS</b></h5>
+          <a class="button is-primary"></a>
+          <a class="button is-info"></a>
+          <a class="button is-success"></a>
+          <a class="button is-warning"></a>
+          <a class="button is-danger"></a>
+        </div>
+        <br>
+        <div> 
+          <a class="button is-danger">
+            <span class="icon">
+              <i class="fa fa-heart"></i>
+            </span>
+            <span>TO WISHLIST</span>
+          </a>         
+          <a class="button is-info">
+            <span class="icon">
+              <i class="fa fa-shopping-cart"></i>
+            </span>
+            <span>Add To Cart</span>
+          </a>
+        </div>               
+
+      </div>
+
+    </div>
+  </div>
+
+  <hr>
+
+</div>

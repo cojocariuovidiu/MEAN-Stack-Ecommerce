@@ -1,0 +1,58 @@
+  <div 
+  *ngIf="checkLogin" [ngClass]="{
+    'ui inline dropdown': true, 
+    'active': dropdown,
+     'visible': dropdown
+     }" (mouseover)="dropdown = true"
+  >
+    <div class="text">
+      <a class="is-outlined" style="border: 0;">
+        <span class="icon">
+        <img [src]="_user.detail?.picture" style="border-radius: 17px;" >
+        </span>
+        <b>{{_user.detail?.name}}</b>   
+      </a>
+    </div>
+    <i class="dropdown icon"></i>
+      <div [ngClass]="{
+           'menu': true,
+           'transition': dropdown,
+           'visible': dropdown,
+           'displayDropdown': dropdown
+           }" (mouseover)="dropdown = true" (mouseout)="dropdown = false"
+      >
+        <a routerLink="/admin" class="item"><i class="fa fa-dashboard"></i>&nbsp;&nbsp; Admin</a>
+        <div class="item"><i class="fa fa-address-card-o"></i>&nbsp;&nbsp; Profile</div>
+        <hr style="margin: 0;"> 
+        <div class="item" (click)="facebookLogOut();"><i class="fa fa-sign-out"></i>&nbsp;&nbsp; Logout</div>
+      </div>
+  </div>
+
+
+<a *ngIf="!checkLogin" class="button is-primary" (click)="modal_login = true ">
+  <span class="icon">
+      <i class="fa fa-sign-in"></i>
+    </span>
+  <span>สมัคร - ล็อกอิน</span>
+</a>
+
+
+<div [ngClass]="{'modal':true, 'is-active':modal_login}">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">กรุณา สมัคร - ล็อกอิน เพื่อเข้าใช้งาน</p>
+      <button class="delete" (click)="modal_login = false "></button>
+    </header>
+    <section class="modal-card-body">
+      <a class="button is-info" style="width: 100%; background-color:#3b5998; " (click)="FacebookLoginClick();">
+        <span class="icon">
+            <i class="fa fa-facebook-official"></i>
+          </span>
+        <span><b>Facebook</b></span>
+      </a>
+    </section>
+    <footer class="modal-card-foot">
+    </footer>
+  </div>
+</div>
