@@ -10,6 +10,9 @@ router.get('/', (req, res) => {
 const user = require('../controllers/user.controller');
 router.post('/user', user.api);
 
+/// Category Api 
+const category = require('../controllers/category.controller');
+router.post('/category', category.create);
 
 /// Product Api 
 const product = require('../controllers/product.controller');

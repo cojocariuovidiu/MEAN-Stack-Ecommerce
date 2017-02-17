@@ -19,14 +19,18 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { AdminComponent } from './admin/admin.component';
 import { AdminSidebarComponent } from './admin/admin-sidebar/admin-sidebar.component';
 import { AddproductComponent } from './admin/addproduct/addproduct.component';
+import { AddcategoryComponent } from './admin/addcategory/addcategory.component';
 
 /////////////////////// Services ///////////////////////
 import { UserService } from './services/user.service';
 import { FacebookService } from './services/facebook.service';
 import { ProductService } from './services/product.service';
+import { CategoryService } from './services/category.service';
 
 ////////// Class ///////////////////////////
 import { User } from './class/user';
+
+
 
 
 const appRoutes: Routes = [
@@ -37,6 +41,7 @@ const appRoutes: Routes = [
     children:[
       { path: '', component: AddproductComponent },
       { path: 'product/add', component: AddproductComponent },
+      { path: 'category/add', component: AddcategoryComponent },
     ]
   },
   
@@ -57,7 +62,8 @@ const appRoutes: Routes = [
     NotfoundComponent,
     AdminComponent,
     AdminSidebarComponent,
-    AddproductComponent
+    AddproductComponent,
+    AddcategoryComponent
   ],
   imports: [
     BrowserModule,
@@ -72,7 +78,8 @@ const appRoutes: Routes = [
     FacebookService,
     ProductService,
     FormBuilder,
-    User
+    User,
+    CategoryService
   ],
   bootstrap: [AppComponent]
 })

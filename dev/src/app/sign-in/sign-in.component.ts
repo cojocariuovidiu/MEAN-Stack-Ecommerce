@@ -33,7 +33,7 @@ export class SignInComponent implements OnInit {
       let status = this._fb.statusChangeCallback(response);
       setTimeout(()=>{this.check(status)},1000);
       console.log("Login Facebook : "+ status);
-    });
+    }); 
   }
 
   facebookLogOut() {

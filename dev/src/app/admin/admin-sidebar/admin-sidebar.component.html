@@ -11,43 +11,42 @@
       Product
     </p>
     <ul class="menu-list">
-      <li><a>Product List</a></li>
-      <li><a class="is-active" routerLink="product/add">Add Product</a></li>
+      <li><a>สินค้า</a></li>
+      <li><a [ngClass]="{'is-active': menu_product_add}"  (click)="menu('product', 'add')">เพิ่ม สินค้า</a></li>
     </ul>
     <p class="menu-label">
       Category
     </p>
     <ul class="menu-list">
-      <li><a>Category List</a></li>
-      <li><a>Add Category</a></li>
+      <li><a>ประเภทสินค้า</a></li>
+      <li><a [ngClass]="{'is-active': menu_category_add}"  (click)="menu('category', 'add')" >เพิ่ม ประเภทสินค้า</a></li>
     </ul>
     <p class="menu-label">
       Customer
     </p>
     <ul class="menu-list">
-      <li><a>Customer List</a></li>
-      <li><a>Add Customer</a></li>
+      <li><a>สมาชิก</a></li>
     </ul>
     <p class="menu-label">
       Adminstrator
     </p>
     <ul class="menu-list">
-      <li><a>Admin List</a></li>
-      <li><a>Add Admin</a></li>
+      <li><a>ผู้ดูแลระบบ</a></li>
+      <li><a>เพิ่ม ผู้ดูแลระบบ</a></li>
     </ul>
     <p class="menu-label">
       View
     </p>
     <ul class="menu-list">
-      <li><a>Create Slide</a></li>
-      <li><a>About</a></li>
-      <li><a>How to pay</a></li>
+      <li><a>สร้าง สไล</a></li>
+      <li><a>เกี่ยวกับ</a></li>
+      <li><a>วิธีโอนเงิน</a></li>
     </ul>   
     <p class="menu-label">
       Report
     </p>
     <ul class="menu-list">
-      <li><a>Report</a></li>
+      <li><a>รายงาน</a></li>
     </ul>   
   </aside>
 </div>

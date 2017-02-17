@@ -6,7 +6,6 @@ const ProductSchema = new Schema({
     pd_categoryID:Number,
     pd_description:String,
     pd_detail:String,
-    pd_amount:Number,
     pd_price:Number,
     pd_picture:Object,
     pd_data:Object

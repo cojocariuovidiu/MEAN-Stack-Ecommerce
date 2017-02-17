@@ -1,0 +1,29 @@
+<form>
+
+  <div class="columns">
+    <div class="column">
+
+      <label class="label">ประเภทสินค้า</label>
+      <p class="control">
+        <input [(ngModel)]="CategoryName" name="CategoryName" class="input" type="text" placeholder="ประเภทสินค้า">
+      </p>    
+      
+      <div class="control is-grouped">
+
+        <p class="control">
+          <button type="submit" (click)="addCategory();" class="button is-primary" [disabled]="!CategoryName">เพิ่มข้อมูล</button>
+        </p>
+        
+        <p class="control">
+          <button class="button" (click)="reset()">ล้างข้อมูล</button>
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="column"></div>
+
+  </div>
+
+</form>
