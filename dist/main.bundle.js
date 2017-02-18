@@ -1206,7 +1206,7 @@ module.exports = ".displayDropdown{\r\n    display: block!important;\r\n    widt
 /***/ 707:
 /***/ (function(module, exports) {
 
-module.exports = "<form>\n\n  <div class=\"columns\">\n    <div class=\"column\">\n\n      <label class=\"label\">ประเภทสินค้า</label>\n      <p class=\"control\">\n        <input [(ngModel)]=\"CategoryName\" name=\"CategoryName\" class=\"input\" type=\"text\" placeholder=\"ประเภทสินค้า\">\n      </p>    \n      \n      <div class=\"control is-grouped\">\n\n        <p class=\"control\">\n          <button type=\"submit\" (click)=\"addCategory();\" class=\"button is-primary\" [disabled]=\"!CategoryName\">เพิ่มข้อมูล</button>\n        </p>\n        \n        <p class=\"control\">\n          <button class=\"button\" (click)=\"reset()\">ล้างข้อมูล</button>\n        </p>\n\n      </div>\n\n    </div>\n\n    <div class=\"column\"></div>\n\n  </div>\n\n</form>"
+module.exports = "<form>\n\n  <div class=\"columns\">\n    <div class=\"column\">\n\n      <label class=\"label\">ประเภทสินค้า</label>\n      <p class=\"control\">\n        <input [(ngModel)]=\"CategoryName\" name=\"CategoryName\" class=\"input\" type=\"text\" placeholder=\"ประเภทสินค้า\">\n      </p>    \n      \n      <div class=\"control is-grouped\">\n\n        <p class=\"control\">\n          <button type=\"submit\" (click)=\"addCategory();\" class=\"button is-primary\" [disabled]=\"!CategoryName\">เพิ่มข้อมูล</button>\n        </p>\n        \n        <p class=\"control\">\n          <button class=\"button\" (click)=\"reset()\" [disabled]=\"!CategoryName\">ล้างข้อมูล</button>\n        </p>\n\n      </div>\n\n    </div>\n\n    <div class=\"column\"></div>\n\n  </div>\n\n</form>"
 
 /***/ }),
 

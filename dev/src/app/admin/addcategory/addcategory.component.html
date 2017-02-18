@@ -15,7 +15,7 @@
         </p>
         
         <p class="control">
-          <button class="button" (click)="reset()">ล้างข้อมูล</button>
+          <button class="button" (click)="reset()" [disabled]="!CategoryName">ล้างข้อมูล</button>
         </p>
 
       </div>
