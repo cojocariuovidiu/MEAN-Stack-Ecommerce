@@ -18,7 +18,7 @@
       Category
     </p>
     <ul class="menu-list">
-      <li><a>ประเภทสินค้า</a></li>
+      <li><a [ngClass]="{'is-active': menu_category_list}"  (click)="menu('category', 'list')" >ประเภทสินค้า</a></li>
       <li><a [ngClass]="{'is-active': menu_category_add}"  (click)="menu('category', 'add')" >เพิ่ม ประเภทสินค้า</a></li>
     </ul>
     <p class="menu-label">
@@ -38,7 +38,7 @@
       View
     </p>
     <ul class="menu-list">
-      <li><a>สร้าง สไล</a></li>
+      <li><a>สร้าง สไลด์</a></li>
       <li><a>เกี่ยวกับ</a></li>
       <li><a>วิธีโอนเงิน</a></li>
     </ul>   

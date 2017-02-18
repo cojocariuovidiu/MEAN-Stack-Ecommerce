@@ -2,3 +2,8 @@
 body{
     background: #eee!important;
 }
+
+.swal2-spacer {
+    background-color: rgba(250, 235, 215, 0)!important;
+    margin-bottom: 5px;
+}

@@ -24,6 +24,7 @@
         "../node_modules/bulma/css/bulma.css",
         "../node_modules/font-awesome/css/font-awesome.min.css",
         "assets/dropdown.css",
+        "../node_modules/sweetalert2/dist/sweetalert2.css",
         "styles.css"
       ],
       "scripts": [

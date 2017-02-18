@@ -37,9 +37,10 @@ export class SignInComponent implements OnInit {
   }
 
   facebookLogOut() {
+    this._router.navigate(['/']);
     FB.logout()    
     this.checkLogin = false;
-    this.dropdown = false;
+    this.dropdown = false;    
   }
 
   FacebookLoginClick(){

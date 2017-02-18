@@ -16,4 +16,12 @@ export class CategoryService {
     return this._http.post(this.url, body, options).map(res => res.json());
   }
 
+  getCategory(){
+    return this._http.get(this.url).map(res => res.json());
+  }
+
+  deleteCategory(_id){
+    return this._http.delete(this.url+'/'+_id).map(res => res.json());
+  }
+
 }

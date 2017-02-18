@@ -12,6 +12,8 @@ router.post('/user', user.api);
 
 /// Category Api 
 const category = require('../controllers/category.controller');
+router.get('/category', category.list);
+router.delete('/category/:_id', category.delete);
 router.post('/category', category.create);
 
 /// Product Api 

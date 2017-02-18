@@ -1,0 +1,29 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th style="width: 10%;"><abbr title="Position">#</abbr></th>
+      <th style="width: 60%;">Name</th>
+      <th style="text-align: center;"><abbr title="Played">Action</abbr></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of Category; let i = index;" >
+      <th>{{ i + 1 }}</th>
+      <td>{{ item?.name }}</td>
+      <td style="text-align: center;">
+        <a class="button is-warning is-outlined">
+          <span>แก้ไข</span>
+          <span class="icon is-small">
+            <i class="fa fa-edit"></i>
+          </span>
+        </a> 
+        <a class="button is-danger is-outlined" (click)="Delete(item?.name, item?._id)">
+          <span>ลบ</span>
+          <span class="icon is-small">
+            <i class="fa fa-times"></i>
+          </span>
+        </a>       
+      </td>
+    </tr>
+  </tbody>
+</table>
